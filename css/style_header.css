@@ -81,3 +81,71 @@ body{
    top: 8px;
     background-image: url("image/header-heart.svg");
 }
+
+.sub-menu__list{
+    position: relative;
+    padding-left: 17px;
+    display: none;
+}
+
+.sub-menu__link{
+    color: #101828;
+}
+
+.sub-menu__link p{
+   color: #475467;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.sub-menu__premium::before{
+    position: absolute;
+    display: block;
+    content: 'ff';
+    left: -5px;
+    height: 24px;
+    width: 24px;
+    background-image: url("/image/solution-premium.svg");
+
+}
+
+.arrow {
+    position: absolute;
+    display: none;
+    top: 12px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #ffffff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.arrow .active {
+    transform: rotate(-180deg);
+}
+
+.menu__arrow {
+
+}
+
+body.mouse .menu__list > li:hover.sub-menu__list {
+    display: block;
+}
+
+body.mouse .sub-menu__list > li:hover.sub-sub-menu__list {
+    display: block;
+}
+
+body.touch .sub-menu__list.open {
+    display: block;
+}
+
+body.touch .sub-sub-menu__list.open {
+    display: block;
+}
+
+body.touch .arrow {
+    display: block;
+}
