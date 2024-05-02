@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    color: #475467;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0 32px;
+}
+
+.user__actions{
+    display: flex;
+}
+
+.user-actions__sign-up{
+    padding: 8px 22px;
+    color: #0153C0;
+    border: solid 2px #0153C0;
+    border-radius: 4px;
+}
+
+.user-actions__log-in{
+    color: #0C111D;
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    margin-right: 10px;
+}
+
+.slogan__header span{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    width: 49px;
+    height: 24px;
+    top: 0;
+    left: 0;
+}
+
+.slogan__header span::before{
+    position: absolute;
+    content: 'dd';
+    left: -38px;
+    height: 21px;
+    width: 25px;
+   top: 8px;
+    /*background-image: url("image/header-heart.svg");*/
+}
