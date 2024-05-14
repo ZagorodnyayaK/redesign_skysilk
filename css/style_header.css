@@ -105,13 +105,14 @@ body {
     border-radius: 6px;
     box-shadow: 0 4px 6px #10182808;
     border: solid 1px #EAECF0;
-    display: none;
+    /*display: none;*/
 }
 
 
 .sub-menu__list-solution {
     left: -95px;
 }
+
 
 .sub-menu__list-support {
     left: 450px;
@@ -143,7 +144,7 @@ body {
     color: #101828;
     min-width: 170px;
     display: inline-block;
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
 }
 
 .sub-menu__link p {
@@ -151,7 +152,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    padding: 10px 30px 0 0;
+    padding: 10px 5px  0 0;
     margin: 0;
     width: 224px;
 }
