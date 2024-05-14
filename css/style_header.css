@@ -105,7 +105,7 @@ body {
     border-radius: 6px;
     box-shadow: 0 4px 6px #10182808;
     border: solid 1px #EAECF0;
-    display: none;
+    /*display: none;*/
 }
 
 
@@ -298,7 +298,7 @@ body {
 }
 
 .sub-sub-menu__list{
-    display: none;
+    /*display: none;*/
 }
 
 .sub-menu__list > li:hover .sub-sub-menu__list {
