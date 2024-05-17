@@ -111,6 +111,7 @@ body {
   padding: remy(32) remy(20) remy(20) remy(72);
   top: remy(52);
   min-width: remy(336);
+  height: max-content;
   border-radius: $sub-menu-border-radius;
   box-shadow: $sub-menu-border-shadow;
   border: solid remy(1) #EAECF0;
