@@ -118,7 +118,7 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
-  display: none;
+  //display: none;
 }
 
 .sub-menu__list-about {
@@ -155,137 +155,6 @@ body {
   width: remy(224);
 }
 
-.sub-menu-icon-position::before {
-  position: absolute;
-  display: block;
-  content: '';
-  left: remy(35);
-}
-
-.sub-menu__premium::before {
-  height: remy(24);
-  width: remy(24);
-  background-image: url("/image/solution-premium.svg");
-}
-
-.sub-menu__unmanaged::before {
-  height: remy(20);
-  width: 19px;
-  background-image: url("/image/solution-unmanaged.svg");
-}
-
-.sub-menu__privat::before {
-  height: remy(20);
-  width: remy(18);
-  background-image: url("/image/solution-privat.svg");
-}
-
-.sub-menu__cloud::before {
-  height: remy(24);
-  width: remy(24);
-  background-image: url("/image/products-cloudhosting.svg");
-}
-
-.sub-menu__collaborate::before {
-  height: remy(24);
-  width: remy(24);
-  background-image: url("/image/products-collaborate.svg");
-}
-
-.sub-menu__compute::before {
-  height: remy(24);
-  width: remy(24);
-  background-image: url("/image/products-compute.svg");
-}
-
-.sub-menu__database::before {
-  height: remy(24);
-  width: remy(24);
-  background-image: url("/image/products-database.svg");
-}
-
-.sub-menu__about::before {
-  height: remy(20);
-  width: remy(20);
-  background-image: url("/image/about-about.svg");
-}
-
-.sub-menu__blog::before {
-  height: remy(18);
-  width: remy(18);
-  background-image: url("/image/about-blog.svg");
-}
-
-.sub-menu__security::before {
-  height: 22px;
-  width: 18px;
-  background-image: url("/image/about-security.svg");
-}
-
-.sub-menu__brand::before {
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/about-brand.svg");
-}
-
-.sub-menu__contact::before {
-  position: absolute;
-  display: block;
-  content: '';
-  left: remy(335);
-  height: remy(18);
-  width: remy(18);
-  background-image: url("/image/about-contact.svg");
-}
-
-.sub-menu__open::before {
-  position: absolute;
-  display: block;
-  content: '';
-  left: 335px;
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/about-openSource.svg");
-}
-
-.sub-menu__legal::before {
-  position: absolute;
-  display: block;
-  content: '';
-  left: 335px;
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/about-legal.svg");
-}
-
-.sub-menu__careers::before {
-  position: absolute;
-  display: block;
-  content: '';
-  left: 335px;
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/about-careers.svg");
-}
-
-.sub-menu__customer::before {
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/support-support.svg");
-}
-
-.sub-menu__community::before {
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/support-community.svg");
-}
-
-.sub-menu__join::before {
-  height: 24px;
-  width: 24px;
-  background-image: url("/image/support-join.svg");
-}
-
 .sub-sub-menu__list {
   position: absolute;
   max-width: remy(541);
@@ -306,7 +175,6 @@ body {
 .sub-sub-menu__list > ul {
   display: flex;
   background: #F9FAFB;
-
 }
 
 .sub-sub-all-products__link::after {
