@@ -118,7 +118,7 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
-  //display: none;
+  display: none;
 }
 
 .sub-menu__list-about {
@@ -192,19 +192,6 @@ body {
 .menu__link__support {
   position: relative;
   padding-right: remy(32);
-}
-
-.menu__link__solution::after,
-.menu__link__about::after,
-.menu__link__products::after,
-.menu__link__support::after {
-  position: absolute;
-  content: '';
-  top: 7px;
-  right: 9px;
-  width: 12px;
-  height: 8px;
-  background-image: url("../image/arrow-Icon.svg");
 }
 
 
