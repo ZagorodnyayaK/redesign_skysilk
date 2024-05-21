@@ -1,11 +1,11 @@
 $main-blue-color: #0153C0;
 $sub-menu-border: solid remy(1) #EAECF0;
 $sub-menu-border-radius: remy(6);
-$sub-menu-border-shadow: 0 remy(4) remy(6) #10182808 ;
+$sub-menu-border-shadow: 0 remy(4) remy(6) #10182808;
 $main-border: solid remy(2) $main-blue-color;
 
 
-@function remy($pxsize){
+@function remy($pxsize) {
   @return calc(($pxsize)/16)+rem;
 }
 
@@ -29,7 +29,7 @@ ul {
 }
 
 body {
-  background-color: #FFFFFFFF;
+  background-color: #fff;
   color: #475467;
   font-family: 'Roboto', sans-serif;
   font-size: remy(16);
@@ -37,6 +37,8 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
   max-width: remy(1440);
   margin: 0 auto;
   min-height: remy(80);
@@ -55,6 +57,7 @@ body {
 .menu__list {
   display: flex;
   position: relative;
+  align-items: center;
   gap: 0 remy(32);
 }
 
@@ -68,13 +71,15 @@ body {
 
 .user__actions {
   display: flex;
-}
 
-.user-actions__sign-up {
-  padding: remy(8) remy(22);
-  color: $main-blue-color;
-  border: solid remy(2) $main-blue-color;
-  border-radius: remy(4);
+
+  .user-actions__sign-up {
+    padding: remy(6) remy(20);
+    color: $main-blue-color;
+    border: solid remy(2) $main-blue-color;
+    border-radius: remy(4);
+    width: remy(100);
+  }
 }
 
 .user-actions__log-in {
@@ -84,6 +89,8 @@ body {
   font-weight: 400;
   padding: remy(8) remy(14);
   margin-right: remy(10);
+  height: auto;
+  width: max-content;
 }
 
 .slogan__header span {
@@ -150,7 +157,7 @@ body {
   font-size: remy(14);
   line-height: remy(20);
   font-weight: 400;
-  padding: remy(10) remy(5)  0 0;
+  padding: remy(10) remy(5) 0 0;
   margin: 0;
   width: remy(224);
 }
@@ -164,7 +171,7 @@ body {
   padding: 0 0 0;
 }
 
-.sub-sub-menu__list{
+.sub-sub-menu__list {
   display: none;
 }
 
@@ -181,17 +188,9 @@ body {
   position: absolute;
   display: block;
   content: '';
-  height: 15px;
-  width: 15px;
+  height: remy(15);
+  width: remy(15);
   background-image: url("/image/Icon-arrow.svg");
-}
-
-.menu__link__solution,
-.menu__link__about,
-.menu__link__products,
-.menu__link__support {
-  position: relative;
-  padding-right: remy(32);
 }
 
 
@@ -199,6 +198,94 @@ body {
   transform: rotate(-180deg);
 }
 
-.menu__item:hover .menu__link{
+.menu__item:hover .menu__link {
   color: #7687A0;
+}
+
+label {
+  display: none;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+@media (max-width: 1350px) {
+  .slogan__header {
+    display: none;
+  }
+}
+
+@media (max-width: 1270px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  label {
+    position: relative;
+    display: block;
+    height: remy(12);
+    width: remy(18);
+  }
+  label::after, label::before, label span {
+    position: absolute;
+    width: 100%;
+    height: remy(2);
+    background-color: #344054;
+    transition: .3s;
+  }
+
+  label::before {
+    content: "";
+    top: 0;
+  }
+
+  label::after {
+    content: "";
+    bottom: 0;
+  }
+
+  label span {
+    top: remy(5);
+  }
+
+  #burger-toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    bottom: remy(5);
+  }
+
+  #burger-toggle:checked ~ label::before {
+    transform: rotate(-45deg);
+    top: remy(5);
+  }
+
+  #burger-toggle:checked ~ label span {
+    transform: rotate(-45deg);
+    top: remy(5);
+  }
+
+  .menu__list{
+    position: fixed;
+    top: remy(80);
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    left: -100vw;
+    right: 100vw;
+  }
+
+  #burger-toggle:checked ~ .menu__list {
+    left: 0;
+    right: 0;
+    transition: .8s;
+  }
+
+  .menu__link{
+    font-size: remy(16);
+    color: #101828;
+  }
 }
