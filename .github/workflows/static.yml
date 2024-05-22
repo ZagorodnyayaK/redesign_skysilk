@@ -43,4 +43,8 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           name: my-artifact
-          path: ./
+          path: |
+            /css/
+            /fonts/
+            /image/
+            index.html
