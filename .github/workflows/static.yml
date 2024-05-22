@@ -38,13 +38,15 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: test
+        run: ls -la
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           name: my-artifact
           path: |
-            /css/
-            /fonts/
-            /image/
-            index.html
+              /css/
+              /fonts/
+              /image/
+              index.html
