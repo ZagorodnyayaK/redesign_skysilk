@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?7lkzsn');
+  src:  url('../fonts/icons.eot?7lkzsn#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?7lkzsn') format('truetype'),
+    url('../fonts/icons.woff?7lkzsn') format('woff'),
+    url('../fonts/icons.svg?7lkzsn#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sol-premium:before {
+  content: "\e90f";
+}
+.icon-sol-unmanaged:before {
+  content: "\e911";
+}
+.icon-sol-privat:before {
+  content: "\e910";
+}
+.icon-abo-about:before {
+  content: "\e901";
+}
+.icon-abo-blog:before {
+  content: "\e902";
+}
+.icon-abo-security:before {
+  content: "\e908";
+}
+.icon-abo-brand:before {
+  content: "\e903";
+}
+.icon-abo-contact:before {
+  content: "\e905";
+}
+.icon-abo-openSource:before {
+  content: "\e907";
+}
+.icon-abo-legal:before {
+  content: "\e906";
+}
+.icon-abo-careers:before {
+  content: "\e904";
+}
+.icon-sup-support:before {
+  content: "\e914";
+}
+.icon-sup-community:before {
+  content: "\e912";
+}
+.icon-sup-join:before {
+  content: "\e913";
+}
+.icon-prod-cloudhosting:before {
+  content: "\e90b";
+}
+.icon-prod-collaborate:before {
+  content: "\e90c";
+}
+.icon-prod-compute:before {
+  content: "\e90d";
+}
+.icon-prod-database:before {
+  content: "\e90e";
+}
+.icon-arrow-products:before {
+  content: "\e909";
+}
+.icon-arrow-header:before {
+  content: "\e90a";
+  border: solid 1px #0153C0;
+}
